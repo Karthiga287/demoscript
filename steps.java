@@ -39,14 +39,16 @@ public class steps {
 	}
 	@Then ("User search for (String)")
 	public void user_searches_for(String seconditem)
+        {
 	ap.searchseconditem(seconditem);
-	{
+	
 	}
 	@And ("User add the first laptop to wish list")
 	public void user_add_the_first_laptop_to_wish_list()
+       {  
 	ap.addseconditem();
 	
-	{
+	
 	}
 	@Then ("User search for (String)")
 	public void user_search_for(String thirditem)
@@ -72,8 +74,9 @@ public class steps {
 	}
 	@And ("User open the Wishlist")
 	public void User_open_the_Wishlist()
+{
 	ap.openwishlist();
-	{
+	
 	}
 	@Then ("User should see the four products in the wishlist")
 	public void  User_should_see_the_four_products_in_the_wishlist()
@@ -102,13 +105,14 @@ public class steps {
 	}
 	
 	
-	
-	
-	
-	
-			
+				
 	}
 	
+
+	
+
+
+
 
 	
 
