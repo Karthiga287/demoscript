@@ -1,0 +1,19 @@
+Feature:Adding four different products in Wishlist
+
+Scenario:Customer can add a products to wish list
+Given:User launch chrome browser
+When User Opens URL "http://testscriptdemo.com"
+When User search for "Mobiles"
+And User add the first mobile to Wish list
+Then User search for "Laptop"
+And User add the first laptop to wish list
+Then User search for "Powerbank"
+And User add the first Powerbank to wishlist
+Then User search for "Ipad"
+And User add the first Ipad to wishlist
+And User open the Wishlist
+Then User should see the four products in the wishlist
+When User search for lowest price product
+And User add the lowest price product to My cart
+Then User should see the Product in My cart
+And close browser
